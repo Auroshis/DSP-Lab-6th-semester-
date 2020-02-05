@@ -1,0 +1,24 @@
+clc;
+clear all;
+close all;
+x = input('enter the sequence');
+y = input('enter the starting point');
+shift = input('enter the shifting factor');
+[p q] = size(x);
+n = y:y+q-1;
+subplot(2,1,1);
+stem(n,x);
+hold on;
+xlim([-10 10]);
+ylim([-10 10]);
+title('Original signal');
+hold off;
+%time shifting
+n = n - shift;
+subplot(2,1,2);
+stem(n,x);
+hold on;
+xlim([-10 10]);
+ylim([-10 10]);
+title('shifted signal');
+hold off;

@@ -1,0 +1,23 @@
+clc ;
+clear all;
+close all;
+x1 = input('Enter the sequence1');
+x2 = input('Enter the sequence2');
+y1 = input('Enter the starting point for sequence 1 ::');
+y2 = input('Enter the starting point for sequence 2 ::');
+[p q] = size(x1);
+[a b] = size(x2);
+%independent variables
+n1 = y1:y1+q-1;
+n2 = y2:y2+b-1;
+n = min(y1,y2):max(y1+q-1,y2+b-1);
+x = x1+x2;
+subplot(2,2,1);
+title('sequence1');
+stem(n1,x1);
+subplot(2,2,2);
+title('sequence2');
+stem(n2,x2);
+subplot(2,2,3);
+title('addition');
+stem(n,x);
