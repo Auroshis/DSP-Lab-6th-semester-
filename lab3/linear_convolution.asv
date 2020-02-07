@@ -11,7 +11,7 @@ y1 = conv(x,h);
 
 [p q] = size(x);
 [o i] = size(h);
-[f w] = size(y1);%could have used numel or length
+[f w] = size(y1);%could have used numel
 %ok
 start1 = y;
 end1=y+q-1;

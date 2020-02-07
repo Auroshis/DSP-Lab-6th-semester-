@@ -1,6 +1,0 @@
-clc
-clear all;
-close all;
-x = [1,2,3,4,3,2,1];
-n= -3:numel(;
-stem(n,x)
