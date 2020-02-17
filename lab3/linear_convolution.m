@@ -24,14 +24,14 @@ end3=start3+w-1;
 n1 = start1:end1
 n2 = start2:end2
 n3 = start3:end3
-subplot(2,2,1);
+subplot(3,1,1);
 stem(n1,x);
 title('sequence1');
 
-subplot(2,2,2);
+subplot(3,1,2);
 stem(n2,h);
 title('sequence2');
 
-subplot(2,2,3);
+subplot(3,1,3);
 stem(n3,y1);
 title('convoluted signal');
