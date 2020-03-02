@@ -9,7 +9,7 @@ nx = stx:stx+length(x)-1
 
 subplot(4,1,1)
 stem(nx,x)
-title('sequence 1')
+title('sequence 1') 
 
 %folding
 x1 = fliplr(x);%flipped the sequence
@@ -47,4 +47,4 @@ subplot(4,1,3)
 stem(conv_n, conv_sequence)
 hold on
 title('Auto-Correlation')
-hold off
+ hold off
